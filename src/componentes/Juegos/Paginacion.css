@@ -1,0 +1,10 @@
+#anterior{
+    float: left;
+}
+#siguiente{
+    float: right;
+}
+#paginacion{
+    width: 100%;
+    
+}

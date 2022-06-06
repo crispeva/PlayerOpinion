@@ -1,0 +1,34 @@
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+#login{
+  float: right;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+#logo{
+  width: 75px;
+  height: 40px;
+margin: 10px;
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
