@@ -39,7 +39,6 @@ export const Inicio = () => {
   </Carousel.Item>
 </Carousel>
 </div>
-<h1>Da tu opinion sin miedo</h1>
 </div>
 </div>
   );

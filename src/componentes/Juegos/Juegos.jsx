@@ -23,7 +23,7 @@ class Juegos extends Component{
                     this.consultarApi();
                     this.scroll();
                 });
-                console.log(pagina)
+               
     }
     paginaSiguiente=()=>{
        
@@ -37,13 +37,12 @@ class Juegos extends Component{
             this.consultarApi();
             this.scroll();
         });
-        console.log(pagina)
+     
     }
     consultarApi =()=>{
         const termino=this.state.termino;
         const pagina=this.state.pagina;
-        const url=`https://api.rawg.io/api/games?key=2cc715e9e8814518aeed3cf5fed44c9b&search=${termino}&page=${pagina}`;
-console.log(url);
+        const url=`https://api.rawg.io/api/games?key=2cc715e9e8814518aeed3cf5fed44c9b&search=${termino}&page_size=4&page=${pagina}`;
       fetch(url)
       .then(respuesta=> respuesta.json())
       .then(resultado=> this.setState({imagenes:resultado.results}))
