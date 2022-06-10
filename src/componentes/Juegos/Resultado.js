@@ -11,12 +11,14 @@ if(imagenes.lenght===0)return null;
 return(
     <React.Fragment>
         <div className="col-12 p-5 row">
+      
             {imagenes.map(imagen=> (
                 <Imagen
                 key={imagen.id}
                 imagen={imagen}
                 />
             ))}
+             
         </div>
         <Paginacion
          paginaAnterior={this.props.paginaAnterior}

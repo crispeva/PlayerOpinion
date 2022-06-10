@@ -6,7 +6,7 @@ export const LogoutButton=()=> {
 
     return( 
         <Navbar.Text>
-        <a href="#login"  onClick={()=> logout({returnTo: window.location.origin}) }>LOGOUT</a>
+        <a href="#login" id="logout" onClick={()=> logout({returnTo: window.location.origin}) }>LOGOUT</a>
        </Navbar.Text>
   
       

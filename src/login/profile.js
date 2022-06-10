@@ -12,9 +12,10 @@ export const Profile=()=>{
     
      
         <Image
-         src={user.picture}  
+         src={user.picture} width="40px" height="40px"  
           roundedCircle
           alt={user.name}
+          
         />
      
 
