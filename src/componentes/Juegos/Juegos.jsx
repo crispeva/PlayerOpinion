@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import './Juegos.css';
 import Buscador  from './Buscador';
 import Resultado  from './Resultado';
+import { Footer } from '../Footer';
+import { Menu } from '../Menu';
 class Juegos extends Component{
     state={
         termino:'',
         imagenes:[],
         pagina:''
     }
+ 
     scroll=()=>{
         const elemento=document.querySelector('.jumbotron');
         elemento.scrollIntoView('smooth','start');
@@ -40,9 +43,10 @@ class Juegos extends Component{
      
     }
     consultarApi =()=>{
+ 
         const termino=this.state.termino;
         const pagina=this.state.pagina;
-        const url=`https://api.rawg.io/api/games?key=2cc715e9e8814518aeed3cf5fed44c9b&search=${termino}&page_size=4&page=${pagina}`;
+        const url=`https://api.rawg.io/api/games?key=2cc715e9e8814518aeed3cf5fed44c9b&search=${termino}&page_size=9&page=${pagina}`;
       fetch(url)
       .then(respuesta=> respuesta.json())
       .then(resultado=> this.setState({imagenes:resultado.results}))
@@ -54,17 +58,23 @@ class Juegos extends Component{
             },()=>{
                 this.consultarApi();
             } )    
-             
+           
     }
+   
     render(){ 
+     
     return (
-        <div className="container" id="body">
+        <div>
+            <Menu/>
+        <div className="container-fixed" id="body">
+         
             <div className="row justify-content-center">
             <div class="col-sm-8">
-
+            
+           
                 
             <div className="jumbotron">
-               <p className="lead text-center">Buscador Juegos</p>
+              
            
 
                 <Buscador
@@ -72,6 +82,7 @@ class Juegos extends Component{
                 />
 
 </div>
+      
       </div> 
         </div>
         <div className="row justify-content-center">
@@ -81,9 +92,21 @@ class Juegos extends Component{
        paginaSiguiente={this.paginaSiguiente}
        />
         </div>
-      
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Footer/>
+        </div>
         </div>
     );
+   
 }
+
 }
 export default Juegos

@@ -1,28 +1,25 @@
 
-    .header {
-      color: #36A0FF;
-      font-size: 27px;
-      padding: 10px;
-  }
-  
-  .bigicon {
-      font-size: 35px;
-      color: #000000;
-  }
   #form_contacto{
     padding: 100px;
     line-height: 1.6;
     font-family: 'Open Sans',sans-serif;
-    width: 50%;
   background-color:#252525 ;
-    margin-top: 120px;
-    position: relative;
-    flex: 1;
-    max-width: 100%;
+    margin-top: 200px;
     justify-content: center;
+    color: orange;
     margin-bottom: 100px;
+    font-size: 20px;
   }
-  #Button{
-  margin-left: 200px;
-  margin-top: 15px;
+#buttonform{
+  width: 200px;
+ 
+}
+  #titulo{
+    font-size: 45px;
+  }
+  @media (max-width: 1000px) {
+    #form_contacto{
+        margin-top: 400px;
+        
+    }
   }

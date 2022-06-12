@@ -10,35 +10,23 @@ export const Footer = () => {
       
     <div className="col-xs-12 col-sm-6 col-md-3">
     <div className="widget subscribe no-box">
-    <h5 className="widget-title">COMPANY NAME<span></span></h5>
-    <p>About the company, little discription will goes here.. </p>
+    <h5 className="widget-title">PLAYER OPINION<span></span></h5>
+    <p>Comparte y disfruta del contenido</p>
     </div>
     </div>
     
     <div className="col-xs-12 col-sm-6 col-md-3">
     <div className="widget no-box">
-    <h5 className="widget-title">Quick Links<span></span></h5>
+    <h5 className="widget-title">TOP JUEGOS<span></span></h5>
     <ul className="thumbnail-widget">
     <li>
-    <div className="thumb-content"><a href="#.">Como comenzar</a></div> 
+    <div className="thumb-content"><a href="#.">Red Dead Redemption 2</a></div> 
     </li>
     <li>
-    <div className="thumb-content"><a href="#.">Top Leaders</a></div> 
+    <div className="thumb-content"><a href="#.">Persona 5 Royal</a></div> 
     </li>
     <li>
-    <div className="thumb-content"><a href="#.">Success Stories</a></div>   
-    </li>
-    <li>
-    <div className="thumb-content"><a href="#.">Event/Tickets</a></div> 
-    </li>
-    <li>
-    <div className="thumb-content"><a href="#.">News</a></div>  
-    </li>
-    <li>
-    <div className="thumb-content"><a href="#.">Lifestyle</a></div> 
-    </li>
-    <li>
-    <div className="thumb-content"><a href="#.">About</a></div> 
+    <div className="thumb-content"><a href="#.">Elden Ring</a></div> 
     </li>
     </ul>
     </div>
@@ -46,16 +34,16 @@ export const Footer = () => {
     
     <div className="col-xs-12 col-sm-6 col-md-3">
     <div className="widget no-box">
-    <h5 className="widget-title">Get Started<span></span></h5>
-    <p>Get access to your full Training and Marketing Suite.</p>
-
+    <h5 className="widget-title">INFORMACIÓN<span></span></h5>
+    <p>Mira como le va a tu juego favorio en el apartado "Juegos"</p>
+    <p>Si tienes algun problema , no dudes en acceder a "Conctato" e informarnos</p>
     </div>
     </div>
     
     <div className="col-xs-12 col-sm-6 col-md-3">
     
     <div className="widget no-box">
-    <h5 className="widget-title">Contact Us<span></span></h5>
+    <h5 className="widget-title">Contacto<span></span></h5>
     
     <p><a href="https://gmail.com" title="glorythemes">cristian.pvc88@gmail.com</a></p>
     <ul className="social-footer2">
@@ -75,7 +63,7 @@ export const Footer = () => {
     <div className="container">
     <div className="row">
     <div className="col-md-12 text-center">
-    <p>Copyright Company Name © 2021. All rights reserved.</p>
+    <p>Player Opinion © 2022. Comparte tu opinion.</p>
     </div>
     </div>
     </div>

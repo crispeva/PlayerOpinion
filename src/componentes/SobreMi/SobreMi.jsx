@@ -2,19 +2,22 @@ import React, { Component } from "react";
 import { Card,Image } from 'react-bootstrap';
 import "./SobreMi.css";
 import Mifoto from './mifoto.jpeg';
+import { Footer } from '../Footer';
+import Menu from '../Menu';
 class SobreMi extends Component {
   
 
 render(){
  
   return (
-
+<div>
+  <Menu/>
     <div className='container ' id='box_sobremi'>
       <div class="row justify-content-md-center">
     <div class="col col-sm-12" id="mifoto">
     <img  class="img-thumbnail" src={Mifoto} width="350px" height="350px" />
     </div>
-    <div class="col-sm-4">
+    <div class="col-lg-4">
     <Card style={{ width: '18rem' , backgroundColor:'#252525',color:'white'}} >
   <Card.Body>
     <Card.Title style={{color:'orange'}}>Yo</Card.Title>
@@ -25,8 +28,9 @@ render(){
   </Card.Body>
 </Card>
     </div>
-    <div class="col col-sm-6 col-md-4 col-md-4 .col-lg-6">
-    <Card style={{ width: '22rem' , backgroundColor:'#252525',color:'white'}} >
+    <br></br>
+    <div class="col-lg-4">
+    <Card style={{ width: '18rem' , backgroundColor:'#252525',color:'white'}} >
   <Card.Body>
     <Card.Title  style={{color:'orange'}}>Aprendizaje</Card.Title>
     <Card.Subtitle className="mb-2 text-muted">Estudios</Card.Subtitle>
@@ -36,7 +40,8 @@ render(){
   </Card.Body>
 </Card>
     </div>
-    <div class="col-sm-4">
+    <br></br>
+    <div class="col-lg-4">
     <Card style={{ width: '18rem' , backgroundColor:'#252525',color:'white'}} >
   <Card.Body>
     <Card.Title  style={{color:'orange'}}>Descripción</Card.Title>
@@ -48,6 +53,9 @@ render(){
 </Card>
     </div>
   </div>
+ 
+</div>
+<Footer/>
 </div>
   );
 }

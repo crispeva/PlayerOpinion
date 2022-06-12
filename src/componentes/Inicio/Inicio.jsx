@@ -1,13 +1,19 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './inicio.css';
+
+import { Footer } from '../Footer';
+import { Menu } from '../Menu';
 export const Inicio = () => {
   return (
+    <div id='caja'>
+<Menu/>
+ 
     <div className='container' id='carrusel'>
 
    
     <div  className='row justify-content-center'>
-    <div class="col-sm-8">
+    <div class="col">
 <Carousel>
   <Carousel.Item >
     <img
@@ -40,6 +46,9 @@ export const Inicio = () => {
 </Carousel>
 </div>
 </div>
+
+</div>
+<Footer/>
 </div>
   );
 };

@@ -22,7 +22,7 @@ const StarStyles = () => {
 
 return (
     <div className="stars-gray">
-        <button className="stars-yellow" style={StarStyles()}></button>
+        <p className="stars-yellow" style={StarStyles()}></p>
     </div>
 );
 }

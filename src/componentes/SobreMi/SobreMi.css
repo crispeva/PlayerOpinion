@@ -3,11 +3,15 @@
     height: 100%;
    margin-top: 150px;
    margin-bottom: 100px;
-   border: 1px solid ;
    text-align: center;
-  
 }
 #mifoto{
     margin-bottom: 100px;
     
 }
+@media (max-width: 1000px) {
+    #mifoto{
+        margin-top: 300px;
+        
+    }
+  }

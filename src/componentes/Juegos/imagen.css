@@ -1,0 +1,13 @@
+#cards{
+    height: auto;
+ 
+}
+#padre{
+   height: 500px;
+	overflow-y: scroll;
+    
+}
+#nombre{
+    color: orange;
+    font-size: 20px;
+}

@@ -2,19 +2,17 @@ import React from "react";
 import "./Paginacion.css"
 const Paginacion=props=>{
     return(
-    
-
-     
-      
         <div id="paginacion" >
-            <div id="anterior">
+            <div >
                 
-            <button onClick={props.paginaAnterior} type="button" className="btn btn-info mr-1">Anterior &larr;</button>
+            <button id="anterior" onClick={props.paginaAnterior} type="button" class="btn btn-warning">&larr;Anterior </button>
             </div>
-            <div id="siguiente">
-            <button onClick={props.paginaSiguiente} type="button" className="btn btn-info ">Siguiente&rarr;</button>
+         
+            <div >
+            <button id="siguiente"  onClick={props.paginaSiguiente} type="button" class="btn btn-warning">Siguiente&rarr;</button>
+            
             </div>
-           
+        
         </div>
         
      

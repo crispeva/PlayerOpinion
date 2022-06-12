@@ -2,6 +2,8 @@ import './Contacto.css';
 import React, { useRef } from 'react';
 import { Form,FloatingLabel,Button } from 'react-bootstrap';
 import  emailjs from 'emailjs-com';
+import { Footer } from '../Footer';
+import { Menu } from '../Menu';
 export const Contacto = () =>  {
   
 
@@ -20,33 +22,34 @@ export const Contacto = () =>  {
       });
   };
   return (
-
-    <div className='container' id='form_contacto'>
+<div>
+  <Menu/>
+    <div className='container py-4' id='form_contacto'>
 <form  ref={form} onSubmit={enviarEmail}>
 <div class="row">
-<legend class="text-center header" style={{color:"orange"}}>Contacta con nosotros</legend>
+<legend class="text-center header" style={{color:"orange"}} id="titulo">Contacta con nosotros</legend>
 
               <Form.Label>Correo</Form.Label>
-              <div class="col-xs-12 col-sm-8 col-md-6">
+              <div class="mb-3">
                   <input type="text" class="form-control" placeholder="Introduce tu correo" />
                 
               </div>
-             
-              <div class="col-xs-12 col-sm-8 col-md-6">
+              <Form.Label>Nombre</Form.Label>
+              <div class="mb-3">
          
               <input type="text" class="form-control" placeholder="Introduce tu nombre" id='name' name="name"/>
   </div>
           
        
           <Form.Label>Tlfn</Form.Label>
-              <div class="col-xs-12 col-sm-8 col-md-6">
+              <div class="mb-3">
                 
                   <input type="text" class="form-control" placeholder="Introduce tu numero de telefono" />
               </div>
-              
-              <div class="col-xs-12 col-sm-8 col-md-6">
+              <Form.Label>Fecha nacimiento</Form.Label>
+              <div class="mb-3">
             
-              <input type="date" class="form-control" placeholder="Enter Card Number" />
+              <input type="date" class="form-control" placeholder="Enter Date Number" />
   </div>
           </div>
           
@@ -60,8 +63,11 @@ export const Contacto = () =>  {
      
   </FloatingLabel>
  <br/>
-  <input class="btn btn-warning" type="submit" value="Enviar" />
+  <input class="btn btn-warning btn-lg" type="submit" value="Enviar" id='buttonform'/>
 </form>
+
+</div>
+<Footer/>
 </div>
   );
 }

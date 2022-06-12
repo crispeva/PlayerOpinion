@@ -4,3 +4,12 @@
     color: red;
     
 }
+#caja{
+    width: 100%;
+}
+@media (max-width: 1000px) {
+    #caja{
+        margin-top: 300px;
+        
+    }
+  }

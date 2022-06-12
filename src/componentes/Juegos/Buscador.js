@@ -1,14 +1,16 @@
 import React, { Component } from "react";
+import { useAuth0 } from "@auth0/auth0-react";
 class Buscador extends Component{
     busquedaRef= React.createRef();
     obtenerDatos=(e)=>{
             e.preventDefault();
-            const termino=this.busquedaRef.current.value;
             
+            const termino=this.busquedaRef.current.value;
             this.props.datosBusqueda(termino);
-
+            
     }
     render(){
+        
         return(
             <form onSubmit={this.obtenerDatos}>
                 <div className="row">
