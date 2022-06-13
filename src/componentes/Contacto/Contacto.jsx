@@ -31,7 +31,7 @@ export const Contacto = () =>  {
 
               <Form.Label>Correo</Form.Label>
               <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="Introduce tu correo" />
+                  <input type="text" class="form-control" placeholder="Introduce tu correo" id='email' name="email"/>
                 
               </div>
               <Form.Label>Nombre</Form.Label>
@@ -44,12 +44,12 @@ export const Contacto = () =>  {
           <Form.Label>Tlfn</Form.Label>
               <div class="mb-3">
                 
-                  <input type="text" class="form-control" placeholder="Introduce tu numero de telefono" />
+                  <input type="text" class="form-control" placeholder="Introduce tu numero de telefono" id='telefono' name="telefono"/>
               </div>
-              <Form.Label>Fecha nacimiento</Form.Label>
+              <Form.Label>Fecha de hoy</Form.Label>
               <div class="mb-3">
             
-              <input type="date" class="form-control" placeholder="Enter Date Number" />
+              <input type="date" class="form-control" placeholder="Enter Date Number" id='fecha' name="fecha"/>
   </div>
           </div>
           

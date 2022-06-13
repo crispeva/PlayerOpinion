@@ -16,7 +16,7 @@ class Buscador extends Component{
                 <div className="row">
                    
                     <div className="form-group col-md-8">
-                        <input ref={this.busquedaRef} type="text" className="form-control form-control-lg" placeholder="Busca tu juego"/>
+                        <input ref={this.busquedaRef} type="text" className="form-control form-control-lg" placeholder="Buscar tu juego"/>
 
                     </div>
                     <div className="form-group col-md-4">

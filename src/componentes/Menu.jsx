@@ -33,7 +33,7 @@ export const Menu = () => {
         <li className="nav-item"> <a className="nav-link active" aria-current="page" href="#" style={{color:"orange"}}>Juegos</a></li>
         </NavLink>}
        <NavLink to="/SobreMi" className="btn brn-light" active-class-name="active">
-       <li className="nav-item"> <a class="nav-link active" aria-current="page" href="#"style={{color:"orange"}}>SobreMi </a></li>
+       <li className="nav-item"> <a class="nav-link active" aria-current="page" href="#"style={{color:"orange"}}>Sobre Mi </a></li>
        </NavLink>
        <NavLink to="/Contacto" className="btn brn-light" active-class-name="active">
        <li className="nav-item"> <a className="nav-link active" aria-current="page" href="#" style={{color:"orange"}} >Contacto</a></li>
